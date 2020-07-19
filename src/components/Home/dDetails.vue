@@ -45,7 +45,7 @@
     <q-card flat class=" no-wrap" >
       <q-scroll-area
       horizontal
-      style="height: 90vh; "
+      style="height: 100vh; "
       class="bg-grey-1 flex flex-center"
     >
       <q-card-section class="row no-wrap">
