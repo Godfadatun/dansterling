@@ -1,5 +1,5 @@
 <template>
-  <q-page class="" padding>
+  <q-page class="">
     <!-- <Home/> -->
     <dHeader />
     <dShips />
