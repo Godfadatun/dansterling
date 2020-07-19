@@ -5,12 +5,9 @@ import routes from './route'
 
 Vue.use(VueRouter)
 
-// const routes = [
-//   { name: 'dashboard', path: '/dashboard', component: () => import('../views/Dashboard.vue')},
-//   { name: 'login', path: '/login', component: () => import('../views/Auth.vue')},
-//   ]
 
 const router = new VueRouter({
+  scrollBehavior: () => ({ x: 0, y: 0 }),
   routes,
   mode: 'history',
   base: process.env.BASE_URL
