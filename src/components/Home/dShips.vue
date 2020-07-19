@@ -5,8 +5,8 @@
       <starships class="col-md-4" v-for="(item, index) in (theroute == 'ships'? myships.results: myships.results.slice(0, 6))" :key="index" :info="item" :index='index' :url="url">
       </starships>
     </div>
-    <div class="column flex-center" v-if="(myships.results.length > 6 && theroute != 'ships')">
-      <q-btn  outline size="sm" class="full-width" style="max-width: 30vw" color="primary" label="View More" :to="{name: 'ships'}" />
+    <div class="column flex-center q-py-md" v-if="(myships.results.length > 6 && theroute != 'ships')">
+      <q-btn  outline size="sm" class="full-width" style="min-width: 30vw" color="primary" label="View More" :to="{name: 'ships'}" />
     </div>
 
   </div>

@@ -8,7 +8,7 @@
         <characters  :info="item" :index='index' :url="url" />
       </div>
     </div>
-    <div class="column flex-center" v-if="(mycharacters.results.length > 6 && theroute != 'people')">
+    <div class="column flex-center q-py-md" v-if="(mycharacters.results.length > 6 && theroute != 'people')">
       <q-btn  outline size="sm" class="full-width" style="max-width: 30vw" color="primary" label="View More" :to="{name: 'people'}" />
     </div>
   </div>
