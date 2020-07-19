@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function theShips ({ commit }){
   axios
-    .get('https://swapi.dev/api/starships')
+    .get(process.env.VUE_APP_MY_API+'starships/')
       .then(response => {
         commit('ships', response.data)
       })
@@ -13,7 +13,7 @@ export async function theShips ({ commit }){
 
 export async function theCharacters ({ commit }){
   axios
-    .get('https://swapi.dev/api/people/')
+    .get(process.env.VUE_APP_MY_API+'people/')
       .then(response => {
         console.log(response.data.results)
         commit('characters', response.data)
@@ -26,7 +26,7 @@ export async function theCharacters ({ commit }){
 
 export async function thePlanets ({ commit }){
   axios
-    .get('https://swapi.dev/api/planets')
+    .get(process.env.VUE_APP_MY_API+'planets/')
       .then(response => {
         commit('planets', response.data)
       })

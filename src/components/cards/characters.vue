@@ -63,7 +63,7 @@ export default {
   },
 
   mounted() {
-    console.log(process.env.VUE_APP_MY_API);
+    // console.log(process.env.VUE_APP_MY_API);
     this.filmsInfo()
   },
 
